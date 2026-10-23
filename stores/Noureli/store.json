@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "noureli",
+  "name": "Noureli",
+  "shopify": {
+    "permanent_domain": null,
+    "shop_id": null
+  },
+  "access": {
+    "isolation": "strict",
+    "runtime_status": "not_provisioned",
+    "live_writes": "explicit_authorization",
+    "private_data": "external_only"
+  },
+  "connections": [
+    {
+      "service": "shopify",
+      "instance": "shopify_noureli",
+      "status": "not_configured",
+      "account_id": null,
+      "credential_env": "NOURELI_SHOPIFY_ADMIN_TOKEN",
+      "permissions": [],
+      "identity_check": "Read the actual shop identity; match permanent domain and stable shop ID before external operations."
+    }
+  ]
+}

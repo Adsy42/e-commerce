@@ -1,0 +1,10 @@
+# Reference only. Not loaded automatically. No actual MCP service is configured.
+# Copy into the isolated runtime's configuration after reviewing its full config.
+# Replace the URL and store identity with a verified store-only MCP gateway.
+
+[mcp_servers.shopify_noureli]
+url = "https://mcp.invalid/noureli"
+bearer_token_env_var = "NOURELI_MCP_BEARER_TOKEN"
+enabled = false
+# Select actual read-only tool names after inspecting the chosen server.
+# enabled_tools = ["<verified-read-only-tool-name>"]
