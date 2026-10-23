@@ -1,6 +1,6 @@
 # Noureli
 
-This directory contains Noureli's material. Read `store.json` before work. The permanent Shopify domain and stable shop ID are not yet configured: no Shopify access is connected or verified.
+This directory contains Noureli's material. Read `store.json` before work. The user-supplied permanent Shopify domain is `30qqph-za.myshopify.com`. The stable shop ID is not yet configured; Shopify access and the declared identity have not been verified.
 
 - Inherit root instructions and shared skills; use `brand/` for this store's positioning and voice.
 - Keep this store's material here. Do not import another store's private content or account sessions.

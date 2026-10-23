@@ -32,6 +32,9 @@ class WorkspaceTests(unittest.TestCase):
         self.write("playbooks/shared.md", "Shared procedure")
         source = workspace.ROOT / "stores/Noureli/store.json"
         self.manifest = json.loads(source.read_text())
+        # This fixture intentionally models an unknown shop, independently of
+        # the actual store identity recorded in the repository.
+        self.manifest["shopify"] = {"permanent_domain": None, "shop_id": None}
         self.write("stores/Noureli/store.json", json.dumps(self.manifest))
         for name in workspace.REQUIRED_DIRS:
             self.write(f"stores/Noureli/{name}/README.md", "Store material")

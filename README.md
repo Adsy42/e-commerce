@@ -44,6 +44,6 @@ python3 -m unittest discover -s tests -v
 
 ## Status
 
-The repository structure and store bundle tooling are configured. Noureli's Shopify domain and integration accounts have not been supplied. No Shopify/MCP/plugin connection, isolated store runtime, or live-store access is configured by these files. A normal checkout of this monorepo is an administrative workspace with access to every file in it.
+The repository structure and store bundle tooling are configured. Noureli's user-supplied permanent Shopify domain is `30qqph-za.myshopify.com`; its stable shop ID and integration accounts remain unconfigured. No Shopify/MCP/plugin connection, isolated store runtime, or live-store access is configured by these files. A normal checkout of this monorepo is an administrative workspace with access to every file in it.
 
 No credentials, customer/order-level exports, browser sessions, or local authentication caches belong in Git. Use a private repository and separate secret stores. Making this repository private, provisioning isolated runtimes, and binding external accounts are platform/account settings, not effects of creating folders.
